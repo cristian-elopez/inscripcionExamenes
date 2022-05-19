@@ -11,21 +11,19 @@
     <title>Inscripción</title>
 </head>
 <body>
-    <div>
-        <form class="formularios">
-            <h1 class="titulo-h1 titulos">Inscripción</h1>
-            <img src="avatar-predeterminado.png" alt="icono-avatar" class="avatar">
-            <div>
-                <label for="nombre" class="labeles">Nombre:
-                    <input type="text" name="nombre" id="nombre" class="inputs">
-                </label>
-                <label for="legajo" class="labeles">Legajo:
-                    <input type="number" name="legajo" id="legajo" class="inputs">
-                </label>
-            </div>
-            <a href="#mesas-examenes" ><input type="button" class="botones" value="Ir a inscripción"></a>
-        </form>
-    </div>
+    <form class="formularios">
+        <h1 class="titulo-h1 titulos">Inscripción</h1>
+        <img src="avatar-predeterminado.png" alt="icono-avatar" class="avatar">
+        <div>
+            <label for="nombre" class="labeles">Nombre:
+                <input type="text" name="nombre" id="nombre" class="inputs">
+            </label>
+            <label for="legajo" class="labeles">Legajo:
+                <input type="number" name="legajo" id="legajo" class="inputs">
+            </label>
+        </div>
+        <a href="#mesas-examenes" ><input type="button" class="botones go-to-mesas" value="Ir a inscripción"></a>
+    </form>
     <div class="separadores"></div>
     <div>
         <h2 class="titulo-info titulos">CRONOGRAMA DE MESAS DE EXÁMENES</h2>
@@ -35,28 +33,29 @@
         </p>
     </div>
     <div class="separadores"></div>
-    <div class="segundo-form-container">
-        <form class="formularios form-datos">
-            <h2 class="titulo-h2 titulos" id="mesas-examenes">Mesas de examenes</h2>
-            <div>
-                <label for="materia" class="labeles">Materia:
-                    <input type="text" name="materia" id="materia" class="inputs">
-                </label>
-                <label for="turno" class="labeles">Turno:
-                    <input type="text" name="turno" id="turno" class="inputs">
-                </label>
-                <label for="email" class="labeles">Email:
-                    <input type="email" name="email" id="email" class="inputs">
-                </label>
-                <label for="facultad" class="labeles">Facultad:
-                    <input type="text" name="facultad" id="facultad" class="inputs">
-                </label>
-                <label for="fecha" class="labeles">Fecha:
-                    <input type="date" name="fecha" id="fecha" class="inputs">
-                </label>
-            </div>
-            <input type="button" class="botones" value="Confirmar" id="enviar-datos">           
-        </form>
+    <form class="formularios form-datos">
+        <h2 class="titulo-h2 titulos" id="mesas-examenes">Mesas de examenes</h2>
+        <div>
+            <label for="materia" class="labeles">Materia:
+                <input type="text" name="materia" id="materia" class="inputs">
+            </label>
+            <label for="turno" class="labeles">Turno:
+                <input type="text" name="turno" id="turno" class="inputs">
+            </label>
+            <label for="email" class="labeles">Email:
+                <input type="email" name="email" id="email" class="inputs">
+            </label>
+            <label for="facultad" class="labeles">Facultad:
+                <input type="text" name="facultad" id="facultad" class="inputs">
+            </label>
+            <label for="fecha" class="labeles">Fecha:
+                <input type="date" name="fecha" id="fecha" class="inputs">
+            </label>
+        </div>
+        <input type="button" class="botones enviar-datos" value="Confirmar">           
+    </form>
+    <div class="go-top-container">
+        <div class="go-top-button"><i>^</i></div>
     </div>
     <div class="modal-background">
         <div class="modal">
