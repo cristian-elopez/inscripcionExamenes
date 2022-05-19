@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <title>Inscripción</title>
+</head>
+<body>
+    <div>
+        <form class="formularios">
+            <h1 class="titulo-h1 titulos">Inscripción</h1>
+            <img src="avatar-predeterminado.png" alt="icono-avatar" class="avatar">
+            <div>
+                <label for="nombre" class="labeles">Nombre:
+                    <input type="text" name="nombre" id="nombre" class="inputs">
+                </label>
+                <label for="legajo" class="labeles">Legajo:
+                    <input type="number" name="legajo" id="legajo" class="inputs">
+                </label>
+            </div>
+            <a href="#mesas-examenes" ><input type="button" class="botones" value="Ir a inscripción"></a>
+        </form>
+    </div>
+    <div class="separadores"></div>
+    <div>
+        <h2 class="titulo-info titulos">CRONOGRAMA DE MESAS DE EXÁMENES</h2>
+        <p class="informacion">
+            Se les recuerda que aquellos que hayan echo la APROBACION DIRECTA de la materia NO DEBEN INSCRIBIRSE AL EXÁMEN FINAL.
+            Aquellos alumnos que no estén cursando y NO se hayan matriculado como SÓLO EXÁMEN para este ciclo lectivo, deberán pasar por el Dto. de Alumnos a fin de matricularse para poder inscribirse a los exámenes.
+        </p>
+    </div>
+    <div class="separadores"></div>
+    <div class="segundo-form-container">
+        <form class="formularios form-datos">
+            <h2 class="titulo-h2 titulos" id="mesas-examenes">Mesas de examenes</h2>
+            <div>
+                <label for="materia" class="labeles">Materia:
+                    <input type="text" name="materia" id="materia" class="inputs">
+                </label>
+                <label for="turno" class="labeles">Turno:
+                    <input type="text" name="turno" id="turno" class="inputs">
+                </label>
+                <label for="email" class="labeles">Email:
+                    <input type="email" name="email" id="email" class="inputs">
+                </label>
+                <label for="facultad" class="labeles">Facultad:
+                    <input type="text" name="facultad" id="facultad" class="inputs">
+                </label>
+                <label for="fecha" class="labeles">Fecha:
+                    <input type="date" name="fecha" id="fecha" class="inputs">
+                </label>
+            </div>
+            <input type="button" class="botones" value="Confirmar" id="enviar-datos">           
+        </form>
+    </div>
+    <div class="modal-background">
+        <div class="modal">
+            <img src="check.png" alt="check" class="imagen-check">
+            <h3 class="mensaje">Inscripción completa</h3>
+        </div>
+    </div>
+    <script type="text/javascript" src="code.js"></script>
+</body>
+</html>
