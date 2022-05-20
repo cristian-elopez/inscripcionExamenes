@@ -3,7 +3,7 @@ body {
     text-align: center;
     background-color: #CFD6EA;
     padding-bottom: 30px;
-    box-sizing: border-box;
+    padding-top: 30px;
 }
 html {
     scroll-behavior: smooth;
@@ -12,12 +12,21 @@ html {
     padding: auto;
     margin: auto;
     width: 80%;
-    max-width: 600px;
+    max-width: 650px;
     background-color: #7D7E75;
     border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-.form-datos {
-    max-width: 100%;
+@media (min-width: 600px) {
+    .form-datos {
+        width: 100%;
+        max-width: 1360px;
+    }
+    .input-form-mesas {
+        max-width: 150px;
+    }
 }
 .botones {
     margin: 20px;
@@ -30,12 +39,19 @@ html {
     background-color: #4F5D2F;
     color: #2E2C2F;
 }
-.labeles {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.avatar {
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min-content,max-content))
+    border-radius: 50%;
+    width: 50%;
+    max-width: 200px;
+    padding: 20px;
+}
+.inputs {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border: none;
+    background-color: #CFD6EA;
 }
 .botones:hover {
     background-color: #2E361B;
@@ -49,6 +65,7 @@ html {
 }
 .titulo-h1 {
     font-size: 3em;
+    margin: auto;
 }
 .titulo-info {
     font-size: 30px;
@@ -59,20 +76,6 @@ html {
     width: 90%;
     max-width: 900px;
     margin: auto;
-}
-.inputs {
-    padding: 10px;
-    margin: auto;
-    width: 200px;
-    border: none;
-    background-color: #CFD6EA;
-}
-.avatar {
-    margin: auto;
-    border-radius: 50%;
-    width: 50%;
-    max-width: 200px;
-    padding: 20px;
 }
 /* ------go top------ */
 .go-top-container {

@@ -27,7 +27,6 @@ contenedor.addEventListener("click",()=>{
     });
 });
 
-
 // prueba scroll hasta el formulario
 // let irAform = document.querySelector(".go-to-mesas");
 // let formMesas = document.querySelector("titulo-h2");
