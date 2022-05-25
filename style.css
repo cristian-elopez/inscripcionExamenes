@@ -23,9 +23,15 @@ html {
     .form-datos {
         width: 100%;
         max-width: 1360px;
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .input-form-mesas {
         max-width: 150px;
+    }
+    .img-mesas-examenes {
+        max-width: 60%;
     }
 }
 .botones {
@@ -45,6 +51,11 @@ html {
     width: 50%;
     max-width: 200px;
     padding: 20px;
+}
+.img-mesas-examenes {
+    padding-top: 30px;
+    margin: auto;
+    width: 85%;
 }
 .inputs {
     padding: 10px;

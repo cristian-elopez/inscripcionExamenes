@@ -26,12 +26,3 @@ contenedor.addEventListener("click",()=>{
         behavior: "smooth"
     });
 });
-
-// prueba scroll hasta el formulario
-// let irAform = document.querySelector(".go-to-mesas");
-// let formMesas = document.querySelector("titulo-h2");
-// irAform.addEventListener("click",()=>{
-//     window.scrollTo(formMesas,{
-//         behavior: "smooth"
-//     });
-// });
